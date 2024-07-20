@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kunal-Jadhav-1/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kunal Jadhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kunal-Jadhav-1/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Kunal-Jadhav-1/Portfolio#readme"
+}
