@@ -1,0 +1,65 @@
+import project1 from "../assets/projects/project-1.png";
+import project2 from "../assets/projects/project-2.png";
+import project3 from "../assets/projects/project-3.png";
+import project4 from "../assets/projects/project-4.png";
+
+export const HERO_CONTENT = `I am a passionate Frontend Web Developer with a knack for crafting robust and scalable web applications. With several of hands-on projects, I have honed my skills in front-end technologies like Reactjs, as well as back-end technologies like Node.js, MySQL and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+
+export const ABOUT_TEXT = `I am a dedicated and versatile Frontend Web Developer with a passion for creating efficient and user-friendly web applications. With several of hands-on projects, I have worked with a variety of technologies, including Reactjs, Node.js, MySQL and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+
+export const EXPERIENCES = [
+  {
+    year: "January 2024 – March 2024",
+    role: "Frontend Web Developer Intern",
+    company: "D Y Patil College of Engineering",
+    description: `Developed a web-based application for the institute faculties for easier appraisal process`,
+    technologies: ["Javascript", "React.js", "Node.js", "mongoDB","TailwindCSS"],
+  },
+  
+];
+
+export const PROJECTS = [
+  {
+    title: "Burp!",
+    image: project1,
+    description:
+      "A food ordering e-commerce website inspired from the design of the leading food delivery website, Swiggy",
+    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+    link:"https://burp-six.vercel.app/"
+  },
+  {
+    title: "T3",
+    image: project2,
+    description:
+      "A fun variation of a classic game with an added twist and a multiplayer option for you to play with your friends from anywhere.",
+    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+    link:"https://ttt-reboot-kunal-jadhavs-projects.vercel.app/"
+  },
+  {
+    title: "KJ Portfolio",
+    image: project3,
+    description:
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+  },
+  {
+    title: "Do",
+    image: project4,
+    description:
+      "A web based solution for your forgetfulness. Just tell 'Do', it'll remind you.",
+    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+    link:"https://to-do-peach-theta.vercel.app/"
+  },
+];
+
+export const CONTACT = {
+  address: "Ravet, Pimpri-Chinchwad, Pune-411044",
+  phoneNo: "+91 7219528334 ",
+  email: "jskunal.01@gmail.com",
+};
+
+export const LINKEDIN = "https://www.linkedin.com/in/kunal-jadhav-52236023b/"
+
+export const GITHUB = "https://github.com/Kunal-Jadhav-1"
+
+export const INSTA = "https://www.instagram.com/_kunal_8334?igsh=MWQwdmZwbGI1eGo0cw=="

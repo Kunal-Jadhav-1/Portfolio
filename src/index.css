@@ -1,68 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-        [type='text'],
-        input:where(:not([type])),
-          [type='email'],
-          [type='url'],
-          [type='password'],
-          [type='number'],
-          [type='date'],
-          [type='datetime-local'],
-          [type='month'],
-          [type='search'],
-          [type='tel'],
-          [type='time'],
-          [type='week'],
-          [multiple],
-          textarea,
-          select{
-            @apply m-1 my-2 ml-2 px-2 w-40 h-7 rounded-md border border-solid border-black text-sm
-
-          }
-}
-
-@layer components{
-    .question-wrapper{
-        @apply mt-32 m-5 mx-20 p-5 rounded-lg border bg-secondary-champange border-accent-chestnut shadow-lg 
-    }
-    .question-sub-wrapper{
-        @apply m-5 p-2 text-lg font-normal rounded-lg border border-accent-chestnut bg-primary-snow
-    }
-    .question-title{
-        @apply mx-2 my-2 pl-5 font-semibold text-3xl
-    }
-    .question-sub-title{
-        @apply m-2 p-2 text-lg font-medium
-    }
-    .line-lg{
-        @apply my-5 mb-10 rounded-lg border-2 border-accent-chestnut
-    }
-    .line-sm{
-        @apply mx-5 mt-10 rounded-lg border border-accent-chestnut
-    }
-    .question-footer{
-        @apply py-4 flex m-5 bg-primary-snow rounded-lg
-    }
-    .btn-add-attachment{
-        @apply px-2 py-1 mx-4 rounded-lg text-base text-white bg-funky-blue h-8
-    }
-    .btn-add-x{
-        @apply px-2 py-1 mx-4 bg-green-700  rounded-lg text-white h-8
-    }
-    .btn-submit{
-        @apply  mx-20 mb-10 p-2 px-3 w-20 bg-accent-chestnut rounded-lg text-white font-semibold shadow-lg 
-    }
-    .btn-navigate{
-        @apply mx-20 mb-10 p-2 px-3 w-20 bg-accent-sand rounded-xl text-white font-semibold shadow-lg
-    }
-    .btn-delete{
-        @apply mx-2 px-2 pt-1 bg-black rounded-lg text-white
-    }
-    .final-marks{
-        @apply mx-3 text-lg font-normal text-gray-600
-    }
-
+:root {
+    font-family: "Inter",sans-serif;
 }
