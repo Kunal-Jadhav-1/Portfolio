@@ -41,6 +41,7 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+    link:"https://portfolio-khaki-omega-82.vercel.app/"
   },
   {
     title: "Do",
