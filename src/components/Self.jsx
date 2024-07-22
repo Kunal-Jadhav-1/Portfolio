@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/KJprofile.png";
+import profilePic from "../assets/KJprofile.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -26,7 +26,7 @@ const Self = () => {
               variants={container(0.35)}
               initial="hidden"
               animate="visible"
-              className="bg-gradient-to-r from-rose-300 via-slate-500 to-sky-300 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-rose-400 via-slate-400 to-sky-300 bg-clip-text text-3xl tracking-tight text-transparent"
             >
               Frontend Web Developer
             </motion.span>
@@ -48,7 +48,7 @@ const Self = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               src={profilePic}
               alt="Kunal Jadhav"
-              className=""
+              className="rounded-md"
             ></motion.img>
           </div>
         </div>
