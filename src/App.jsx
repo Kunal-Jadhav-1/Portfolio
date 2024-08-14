@@ -16,7 +16,7 @@ const App = () => {
       <div className="container mx-auto px-8">
         <NavBar />
         <Self/>
-        <About/>
+        {/* <About/> */}
         <Technologies/>
         <Experience/>
         <Projects/>

@@ -3,7 +3,7 @@ import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
 
-export const HERO_CONTENT = `I am a passionate Frontend Web Developer with a knack for crafting robust and scalable web applications. With several of hands-on projects, I have honed my skills in front-end technologies like Reactjs and other Frontend frameworks. My goal is to leverage my expertise to create innovative solutions that deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I'm a Frontend Web Developer with a passion for building scalable web applications. I specialize in React.js and other frontend frameworks, aiming to create innovative solutions that deliver great user experiences.`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile Frontend Web Developer with a passion for creating efficient and user-friendly web applications. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new places, and playing chess and badminton occasionally.`;
 

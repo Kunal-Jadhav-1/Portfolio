@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../assets/about.jpg";
+import logo from "../assets/KJlogo.png";
 import { ABOUT_TEXT } from "../constants";
 import { motion } from "framer-motion";
 
@@ -15,7 +15,7 @@ const About = () => {
           className="w-2/3 lg:w-1/4 lg:p-8"
         >
           <div className="flex items-center justify-center">
-            <img src={about} alt="about me" className="rounded-2xl"></img>
+            <img src={logo} alt="about me" className="rounded-2xl"></img>
           </div>
         </motion.div>
         <motion.div
