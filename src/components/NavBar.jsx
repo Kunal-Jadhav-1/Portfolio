@@ -2,7 +2,7 @@ import React from 'react';
 import logo from "../assets/KJlogo.png";
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { GITHUB, INSTA, LINKEDIN } from '../constants';
-import Resume from "../assets/Resume Custom Final Draft.pdf";
+import Resume from "../assets/Kunal_Jadhav_Resume.pdf";
 
 const NavBar = () => {
   return (
