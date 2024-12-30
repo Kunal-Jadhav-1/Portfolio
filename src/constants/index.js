@@ -23,9 +23,17 @@ export const PROJECTS = [
     title: "Burp!",
     image: project1,
     description:
-      "A food ordering e-commerce website inspired from the design of the leading food delivery website, Swiggy",
+      "A food ordering e-commerce food ordering website inspired by the design of the leading food delivery websites.",
     technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
     link:"https://burp-six.vercel.app/"
+  },
+  {
+    title: "Do",
+    image: project4,
+    description:
+      "A web based solution for your forgetfulness. Just tell 'Do', it'll remind you.",
+    technologies: ["HTML", "TailwindCSS", "Next.js","Javascript"],
+    link:"https://do-sigma.vercel.app/"
   },
   {
     title: "T3",
@@ -43,14 +51,7 @@ export const PROJECTS = [
     technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
     link:"https://portfolio-khaki-omega-82.vercel.app/"
   },
-  {
-    title: "Do",
-    image: project4,
-    description:
-      "A web based solution for your forgetfulness. Just tell 'Do', it'll remind you.",
-    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
-    link:"https://to-do-peach-theta.vercel.app/"
-  },
+  
 ];
 
 export const CONTACT = {
