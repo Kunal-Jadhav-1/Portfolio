@@ -2,6 +2,9 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
 import project3 from "../assets/projects/project-3.png";
 import project4 from "../assets/projects/project-4.png";
+import project5 from "../assets/projects/project-5.png";
+import project6 from "../assets/projects/project-6.png";
+
 
 export const HERO_CONTENT = `I'm a Frontend Web Developer with a passion for building scalable web applications. I specialize in React.js and other frontend frameworks, aiming to create innovative solutions that deliver great user experiences.`;
 
@@ -36,10 +39,10 @@ export const PROJECTS = [
     link:"https://do-sigma.vercel.app/"
   },
   {
-    title: "T3",
+    title: "T3 Reboot",
     image: project2,
     description:
-      "A fun variation of a classic game with an added twist and a multiplayer option for you to play with your friends from anywhere.",
+      "A fun variation of a classic game with an added twist and novelty editions",
     technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
     link:"https://ttt-reboot-kunal-jadhavs-projects.vercel.app/"
   },
@@ -50,6 +53,22 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
     link:"https://portfolio-khaki-omega-82.vercel.app/"
+  },
+  {
+    title: "ZenStreet",
+    image: project5,
+    description:
+      "A user-friendly online therapy platform.",
+    technologies: ["HTML", "TailwindCSS", "Next.js","Javascript"],
+    link:"https://zen-street-assignment.vercel.app/"
+  },
+  {
+    title: "TIF",
+    image: project6,
+    description:
+      "A user-friendly foodtruck website.",
+    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+    link:"https://tif-assignment-1-nine.vercel.app/"
   },
   
 ];
