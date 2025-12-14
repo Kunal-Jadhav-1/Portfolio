@@ -18,7 +18,7 @@ const Self = () => {
               variants={container(0.3)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-4xl font-thin tracking-tight lg:mt-10 md:text-5xl lg:text-6xl"
+              className="pb-16 text-4xl tracking-tight lg:mt-10 md:text-5xl lg:text-6xl"
             >
               Kunal Jadhav
             </motion.h1>
@@ -28,7 +28,7 @@ const Self = () => {
               animate="visible"
               className="bg-gradient-to-r from-rose-400 via-slate-400 to-sky-300 bg-clip-text text-3xl tracking-tight text-transparent text-center sm:text-left"
             >
-              Frontend Web Developer
+              Software Developer
             </motion.span>
             <motion.span
               variants={container(0.4)}
@@ -36,9 +36,7 @@ const Self = () => {
               animate="visible"
               className="bg-gradient-to-r from-rose-400 via-slate-400 to-sky-300 bg-clip-text text-xl font-[300] tracking-tight text-transparent flex flex-wrap justify-center sm:justify-start"
             >
-              <span>#CaptainHook</span>
               <span>#MathGuy</span>
-              <span>#I'llHandleIt</span>
               <span>#AlwaysUpForIcecream</span>
             </motion.span>
             <motion.p
