@@ -2,7 +2,7 @@ const skillGroups = [
   { title: "Data platforms", items: ["BigQuery", "Snowflake", "Google Cloud Storage"] },
   { title: "Pipelines & modelling", items: ["Airflow", "Cloud Composer", "dbt"] },
   { title: "Languages", items: ["Python", "SQL", "Shell", "JavaScript"] },
-  { title: "Development", items: ["React", "Node.js", "MongoDB", "MySQL", "Git"] },
+  { title: "Development", items: [ "MySQL", "Git","React", "Node.js", "MongoDB"] },
 ];
 
 const Skills = () => (
