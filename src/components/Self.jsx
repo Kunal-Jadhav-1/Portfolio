@@ -1,68 +1,71 @@
-import React from "react";
-import { HERO_CONTENT } from "../constants";
-import about from "../assets/about.jpg";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
+import { EXPERIENCES, HERO_CONTENT } from "../constants";
+import Resume from "../assets/Kunal_Jadhav_Resume.pdf";
 
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: { x: 0, opacity: 1, transition: { duration: 0.5, delay: delay } },
-});
+const flowSteps = [
+  { name: "SOURCE", description: "APIs / files / databases" },
+  { name: "INGEST", description: "Airflow orchestration" },
+  { name: "TRANSFORM", description: "SQL + dbt models" },
+  { name: "MODEL", description: "BigQuery / Snowflake" },
+];
+const currentRole = EXPERIENCES[0];
+const roleText = "Data Engineer at Bitwise Solutions";
 
 const Self = () => {
+  const prefersReducedMotion = useReducedMotion();
+
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35 lg:pb-32 font-sans">
-      <div className="flex flex-wrap justify-evenly">
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center text-wrap lg:items-start">
-            <motion.h1
-              variants={container(0.3)}
-              initial="hidden"
-              animate="visible"
-              className="pb-16 text-4xl tracking-tight lg:mt-10 md:text-5xl lg:text-6xl"
-            >
-              Kunal Jadhav
-            </motion.h1>
-            <motion.span
-              variants={container(0.35)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-rose-400 via-slate-400 to-sky-300 bg-clip-text text-3xl tracking-tight text-transparent text-center sm:text-left"
-            >
-              Software Developer
-            </motion.span>
-            <motion.span
-              variants={container(0.4)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-rose-400 via-slate-400 to-sky-300 bg-clip-text text-xl font-[300] tracking-tight text-transparent flex flex-wrap justify-center sm:justify-start"
-            >
-              <span>#MathGuy</span>
-              <span>#AlwaysUpForIcecream</span>
-            </motion.span>
-            <motion.p
-              variants={container(0.45)}
-              initial="hidden"
-              animate="visible"
-              className="my-2 max-w-xl py-6 font-normal tracking-tighter"
-            >
-              {HERO_CONTENT}
-            </motion.p>
-          </div>
+    <section id="top" className="hero-section">
+      <motion.div
+        className="hero-copy"
+        initial={{ opacity: 0, y: 18 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.65, ease: "easeOut" }}
+      >
+        <p className="eyebrow hero-eyebrow">Data engineer <span>/</span> Pune, India</p>
+        <h1 className="hero-title">Kunal<br /><em>Jadhav.</em></h1>
+        <p className="hero-role" aria-label={roleText}>
+          <span className="typewriter-text" aria-hidden="true">{roleText}</span>
+          <span className="typewriter-caret" aria-hidden="true" />
+        </p>
+        <p className="hero-description">{HERO_CONTENT}</p>
+        <div className="hero-actions">
+          <a className="primary-link focus-ring" href="#experience">View experience <span aria-hidden="true">&#8599;</span></a>
+          <a className="text-link focus-ring" href={Resume} target="_blank" rel="noreferrer">Resume <span aria-hidden="true">&#8599;</span></a>
         </div>
-        <div className="w-2/3 my-3 lg:my-0 lg:w-[30%] lg:p-8">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              src={about}
-              alt="Kunal Jadhav"
-              className="rounded-md"
-            ></motion.img>
-          </div>
+      </motion.div>
+
+      <motion.div
+        className="hero-experience"
+        initial={{ opacity: 0, y: 18 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: prefersReducedMotion ? 0 : 0.7, delay: 0.15, ease: "easeOut" }}
+      >
+        <div className="flow-topline">
+          <span className="mono-label">Data workflow</span>
         </div>
-      </div>
-    </div>
+        <div className="flow-canvas">
+          <div className="flow-axis" aria-hidden="true" />
+          {flowSteps.map((step, index) => (
+            <div className={`flow-step flow-step-${index + 1}`} key={step.name}>
+              <span className="flow-node" aria-hidden="true" />
+              <span className="mono-label">{step.name}</span>
+              <span className="flow-description">{step.description}</span>
+            </div>
+          ))}
+        </div>
+        <div className="flow-toolkit">
+          <span className="mono-label">Current toolkit</span>
+          <ul>
+            {currentRole.technologies.map((technology) => (
+              <li key={technology}>{technology}</li>
+            ))}
+          </ul>
+        </div>
+      </motion.div>
+
+      {/* <span>#MathGuy</span><span>#AlwaysUpForIcecream</span> */}
+    </section>
   );
 };
 

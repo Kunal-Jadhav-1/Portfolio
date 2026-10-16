@@ -1,59 +1,41 @@
-import React from "react";
-import { EXPERIENCES } from "../constants/index";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
+import { EXPERIENCES } from "../constants";
 
 const Experience = () => {
-  //   console.log(EXPERIENCES);
+  const prefersReducedMotion = useReducedMotion();
+
   return (
-    <div className="border-b border-neutral-900 pb-4">
-      <h2 className="my-20 text-center text-4xl">Experience</h2>
-      <div>
-        {EXPERIENCES.map((experience, index) => {
-          return (
-            <div key={index} className="flex-wrap justify-center my-10">
-              <div className="w-full lg:w-4/5 lg:flex lg:justify-evenly">
-                <motion.div
-                  initial={{ opacity: 0, x: -100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.10 }}
-                  className="mb-2 text-sm text-neutral-400"
-                >
-                  {experience.year}
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, x: 100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.5, delay: 0.10 }}
-                  className="w-full max-w-xl lg:w-3/4"
-                >
-                  <h6 className="mb-2 font-semibold">
-                    {experience.role} -{" "}
-                    <span className="text-sm text-purple-100">
-                      {experience.company}
-                    </span>
-                  </h6>
-                  <p className="mb-4 text-neutral-400">
-                    {experience.description}
-                  </p>
-                  <div className="flex flex-wrap justify-normal">
-                    {experience.technologies.map((technology, index) => {
-                      return (
-                        <span
-                          key={index}
-                          className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-sky-400 "
-                        >
-                          {technology}
-                        </span>
-                      );
-                    })}
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-          );
-        })}
+    <section className="section-block" id="experience">
+      <div className="section-heading">
+        <h2>Experience</h2>
+        <span>Where I have worked</span>
       </div>
-    </div>
+      <div className="experience-list">
+        {EXPERIENCES.map((experience, index) => (
+          <motion.article
+            className={`experience-row${index === 0 ? " experience-row-featured" : ""}`}
+            key={`${experience.company}-${experience.year}`}
+            initial={prefersReducedMotion ? false : { opacity: 0, y: 16 }}
+            whileInView={prefersReducedMotion ? undefined : { opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: prefersReducedMotion ? 0 : 0.45, delay: index * 0.08, ease: "easeOut" }}
+          >
+            <div className="experience-meta">
+              <span className="experience-marker" aria-hidden="true" />
+              <p className="experience-date mono-label">{experience.year}</p>
+            </div>
+            <div className="experience-detail">
+              {index === 0 && <span className="experience-current"><span aria-hidden="true" /> Current role</span>}
+              <h3>{experience.role}<span> / {experience.company}</span></h3>
+              <p>{experience.description}</p>
+              <ul className={`inline-list${index === 0 ? " experience-tech-current" : ""}`} aria-label="Technologies used">
+                {experience.technologies.map((technology) => <li key={technology}>{technology}</li>)}
+              </ul>
+            </div>
+          </motion.article>
+        ))}
+      </div>
+    </section>
   );
 };
 

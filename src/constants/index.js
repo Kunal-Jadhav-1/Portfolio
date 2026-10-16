@@ -7,21 +7,21 @@ import project6 from "../assets/projects/project-6.png";
 import project7 from "../assets/projects/project-7.png";
 
 
-export const HERO_CONTENT = `I'm a Software Developer with a passion for solving problems. `;
+export const HERO_CONTENT = `From raw data to decision-ready insight, one dependable pipeline at a time.`;
 
 export const ABOUT_TEXT = `I'm a versatile Software Developer with a knack for problem solving and efficiency. Outside of coding, I enjoy traveling, exploring new places, and playing chess and badminton occasionally.`;
 
 export const EXPERIENCES = [
   {
     year: "June 2025 – Current",
-    role: "Trainee Programmer",
+    role: "Data Engineer",
     company: "Bitwise Solutions",
     description: `Part of a Data Engineering team`,
-    technologies: ["Python", "Shell", "SQL", "GCS", "BigQuery", "Composer"],
+    technologies: ["Python", "SQL", "Shell", "GCS", "Airflow", "Snowflake", "DBT", "BigQuery"],
   },{
     year: "January 2024 – March 2024",
     role: "Frontend Web Developer Intern",
-    company: "D Y Patil College of Engineering",
+    company: "DYPCOE",
     description: `Developed a web-based application for the institute faculties for easier appraisal process`,
     technologies: ["Javascript", "React.js", "Node.js", "mongoDB","TailwindCSS"],
   },
@@ -45,14 +45,14 @@ export const PROJECTS = [
     technologies: ["React.js", "TailwindCSS","Node.js", "MongoDB", "AWS S3"],
     link:"https://burp-six.vercel.app/"
   },
-  {
-    title: "Do",
-    image: project4,
-    description:
-      "A web based solution for your forgetfulness. Just tell 'Do', it'll remind you.",
-    technologies: [ "Next.js","TailwindCSS","Email.js"],
-    link:"https://do-sigma.vercel.app/"
-  },
+  // {
+  //   title: "Do",
+  //   image: project4,
+  //   description:
+  //     "A web based solution for your forgetfulness. Just tell 'Do', it'll remind you.",
+  //   technologies: [ "Next.js","TailwindCSS","Email.js"],
+  //   link:"https://do-sigma.vercel.app/"
+  // },
   {
     title: "T3 Reboot",
     image: project2,
@@ -61,14 +61,14 @@ export const PROJECTS = [
     technologies: ["React.js", "TailwindCSS"],
     link:"https://ttt-reboot-kunal-jadhavs-projects.vercel.app/"
   },
-  {
-    title: "KJ Portfolio",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "TailwindCSS", "React.js", "React Visualization Libraries"],
-    link:"https://portfolio-khaki-omega-82.vercel.app/"
-  },
+  // {
+  //   title: "KJ Portfolio",
+  //   image: project3,
+  //   description:
+  //     "A personal portfolio website showcasing projects, skills, and contact information.",
+  //   technologies: ["HTML", "TailwindCSS", "React.js", "React Visualization Libraries"],
+  //   link:"https://portfolio-khaki-omega-82.vercel.app/"
+  // },
   {
     title: "ZenStreet",
     image: project5,
@@ -77,14 +77,14 @@ export const PROJECTS = [
     technologies: ["HTML", "TailwindCSS", "Next.js","Javascript"],
     link:"https://zen-street-assignment.vercel.app/"
   },
-  {
-    title: "TIF",
-    image: project6,
-    description:
-      "A user-friendly foodtruck website.(UI)",
-    technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
-    link:"https://tif-assignment-1-nine.vercel.app/"
-  },
+  // {
+  //   title: "TIF",
+  //   image: project6,
+  //   description:
+  //     "A user-friendly foodtruck website.(UI)",
+  //   technologies: ["HTML", "TailwindCSS", "React.js","Javascript"],
+  //   link:"https://tif-assignment-1-nine.vercel.app/"
+  // },
   
 ];
 
@@ -97,5 +97,7 @@ export const CONTACT = {
 export const LINKEDIN = "https://www.linkedin.com/in/kunal-jadhav-52236023b/"
 
 export const GITHUB = "https://github.com/Kunal-Jadhav-1"
+
+export const LEETCODE = "https://leetcode.com/u/user3977qu/"
 
 export const INSTA = "https://www.instagram.com/_kunal_8334?igsh=MWQwdmZwbGI1eGo0cw=="

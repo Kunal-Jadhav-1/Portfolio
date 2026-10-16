@@ -1,26 +1,26 @@
-import React from "react";
 import { CONTACT } from "../constants";
-import {motion} from "framer-motion"
+import { GITHUB, LEETCODE, LINKEDIN } from "../constants";
 
 const Contact = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: -100 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5, delay: 0.10 }}
-      id="contact"
-      className="border-b border-neurtal-900 pb-20"
-    >
-      <h2 className="my-10 text-center text-3xl">Get in Touch</h2>
-      <div className="text-center tracking-tighter">
-        <p className="my-4"> {CONTACT.address}</p>
-        <p className="my-4"> {CONTACT.phoneNo}</p>
-        <a href="#" className="my-4">
-          {" "}
-          {CONTACT.email}
+    <footer className="contact-section" id="contact">
+      <div className="contact-main">
+        <p className="eyebrow">Get in touch</p>
+        <h2>Open to thoughtful<br /><em>conversations.</em></h2>
+        <a className="contact-email focus-ring" href={`mailto:${CONTACT.email}`}>
+          {CONTACT.email}<span aria-hidden="true">&#8599;</span>
         </a>
       </div>
-    </motion.div>
+      <div className="contact-bottom">
+        <p>Pune, India</p>
+        <div className="social-links">
+          <a className="focus-ring" href={LINKEDIN} target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">&#8599;</span></a>
+          <a className="focus-ring" href={GITHUB} target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">&#8599;</span></a>
+          <a className="focus-ring" href={LEETCODE} target="_blank" rel="noreferrer">LeetCode <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        <span className="mono-label">Kunal Jadhav / Portfolio</span>
+      </div>
+    </footer>
   );
 };
 

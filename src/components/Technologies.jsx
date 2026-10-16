@@ -16,8 +16,13 @@ import {
   SiGnubash,
   SiGooglecloudcomposer,
   SiGooglebigquery,
+  SiSnowflake,
+  SiDbt,
+  SiGithubcopilot
 } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+
+
 
 const iconVariants1 = (d) => ({
   initial: { y: -10 },
@@ -112,7 +117,7 @@ const Technologies = () => {
             </div>
           </motion.div>
 
-          {/* JavaScript */}
+          {/* JavaScript
           <motion.div
             variants={iconVariants1(1)}
             initial="initial"
@@ -125,9 +130,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               JavaScript
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* TypeScript */}
+          {/* TypeScript
           <motion.div
             variants={iconVariants2(1)}
             initial="initial"
@@ -140,9 +145,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               TypeScript
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* React */}
+          {/* React
           <motion.div
             variants={iconVariants1(1)}
             initial="initial"
@@ -155,9 +160,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               React.js
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Next.js */}
+          {/* Next.js
           <motion.div
             variants={iconVariants2(1)}
             initial="initial"
@@ -170,9 +175,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               Next.js
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Django */}
+          {/* Django
           <motion.div
             variants={iconVariants1(1)}
             initial="initial"
@@ -185,9 +190,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               Django
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* Node */}
+          {/* Node
           <motion.div
             variants={iconVariants2(1)}
             initial="initial"
@@ -200,9 +205,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               Node.js
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* MongoDB */}
+          {/* MongoDB
           <motion.div
             variants={iconVariants1(1)}
             initial="initial"
@@ -215,9 +220,9 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               MongoDB
             </div>
-          </motion.div>
+          </motion.div> */}
 
-          {/* SQLite */}
+          {/* SQLite
           <motion.div
             variants={iconVariants2(1)}
             initial="initial"
@@ -230,7 +235,7 @@ const Technologies = () => {
               opacity-0 group-hover:opacity-100 transition">
               SQLite
             </div>
-          </motion.div>
+          </motion.div> */}
 
           {/* MySQL */}
           <motion.div
@@ -259,6 +264,48 @@ const Technologies = () => {
               rounded-md bg-neutral-900 px-3 py-1 text-sm text-white
               opacity-0 group-hover:opacity-100 transition">
               Git
+            </div>
+          </motion.div>
+          {/* Snowflake */}
+          <motion.div
+            variants={iconVariants1(1)}
+            initial="initial"
+            animate="animate"
+            className="relative group rounded-2xl border-4 border-neutral-800 p-4 shrink-0"
+          >
+            <SiSnowflake className="text-7xl text-sky-500" />
+            <div className="absolute -bottom-9 left-1/2 -translate-x-1/2
+              rounded-md bg-neutral-900 px-3 py-1 text-sm text-white
+              opacity-0 group-hover:opacity-100 transition">
+              Snowflake
+            </div>
+          </motion.div>
+          {/* DBT */}
+          <motion.div
+            variants={iconVariants2(1)}
+            initial="initial"
+            animate="animate"
+            className="relative group rounded-2xl border-4 border-neutral-800 p-4 shrink-0"
+          >
+            <SiDbt className="text-7xl text-orange-600" />
+            <div className="absolute -bottom-9 left-1/2 -translate-x-1/2
+              rounded-md bg-neutral-900 px-3 py-1 text-sm text-white
+              opacity-0 group-hover:opacity-100 transition">
+              DBT
+            </div>
+          </motion.div>
+          {/* Copilot */}
+          <motion.div
+            variants={iconVariants2(1)}
+            initial="initial"
+            animate="animate"
+            className="relative group rounded-2xl border-4 border-neutral-800 p-4 shrink-0"
+          >
+            <SiGithubcopilot className="text-7xl text-white" />
+            <div className="absolute -bottom-9 left-1/2 -translate-x-1/2
+              rounded-md bg-neutral-900 px-3 py-1 text-sm text-white
+              opacity-0 group-hover:opacity-100 transition">
+              Copilot
             </div>
           </motion.div>
 
