@@ -9,7 +9,7 @@ const flowSteps = [
   { name: "MODEL", description: "BigQuery / Snowflake" },
 ];
 const currentRole = EXPERIENCES[0];
-const roleText = "Data Engineer at Bitwise Solutions";
+const roleText = `${currentRole.role} at ${currentRole.company}`;
 
 const Self = () => {
   const prefersReducedMotion = useReducedMotion();

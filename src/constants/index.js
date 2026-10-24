@@ -35,7 +35,8 @@ export const PROJECTS = [
     description:
       "Yk when you look at something online and are like I would buy this if it were 'x' Rs cheaper, but then you just forget about it? Well, not anymore!!! [Under Construction]",
     technologies: ["React.js","Django","SQLite","Python" ],
-    link:"https://smart-cart-liart.vercel.app/"
+    link:"https://smart-cart-liart.vercel.app/",
+    github:"https://github.com/Kunal-Jadhav-1/SmartCart"
   },
   {
     title: "Burp!",
@@ -43,7 +44,8 @@ export const PROJECTS = [
     description:
       "A food ordering e-commerce food ordering website inspired by the design of the leading food delivery websites.",
     technologies: ["React.js", "TailwindCSS","Node.js", "MongoDB", "AWS S3"],
-    link:"https://burp-six.vercel.app/"
+    link:"https://burp-six.vercel.app/",
+    github:"https://github.com/Kunal-Jadhav-1/Burp"
   },
   // {
   //   title: "Do",
@@ -59,7 +61,8 @@ export const PROJECTS = [
     description:
       "A fun variation of a classic game with an added twist and novelty editions",
     technologies: ["React.js", "TailwindCSS"],
-    link:"https://ttt-reboot-kunal-jadhavs-projects.vercel.app/"
+    link:"https://ttt-reboot-kunal-jadhavs-projects.vercel.app/",
+    github:"https://github.com/Kunal-Jadhav-1/T3-Reboot"
   },
   // {
   //   title: "KJ Portfolio",
@@ -75,7 +78,8 @@ export const PROJECTS = [
     description:
       "A user-friendly online therapy platform. (UI)",
     technologies: ["HTML", "TailwindCSS", "Next.js","Javascript"],
-    link:"https://zen-street-assignment.vercel.app/"
+    link:"https://zen-street-assignment.vercel.app/",
+    github:"https://github.com/Kunal-Jadhav-1/ZenStreet-Assignment"
   },
   // {
   //   title: "TIF",
